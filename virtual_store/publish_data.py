@@ -9,10 +9,11 @@ from google.oauth2 import service_account
 def pushData(eventData):
     # Replace with your projectid
     projectid = "rf-sme-academy"
+   
     # Replace  with your pubsub topic
-    pubsub_topic = "projects/hadooptest-223316/topics/virtualStore"
+    pubsub_topic = "projects/rf-sme-academy/topics/virtualstore"
     # Replace with your service account path
-    service_account_path = "/home/aakash/credentials/pubsubtest.json"
+    service_account_path = "/home/reedyfeggins/a-datapipeline/rf-sme-academy-c2dcb98360b1.json"
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = service_account_path
 
     publisher = pubsub_v1.PublisherClient.from_service_account_file(
