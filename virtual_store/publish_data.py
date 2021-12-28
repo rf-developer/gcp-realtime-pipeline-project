@@ -8,7 +8,7 @@ from google.oauth2 import service_account
 ##
 def pushData(eventData):
     # Replace with your projectid
-    projectid = "hadooptest-223316"
+    projectid = "rf-sme-academy"
     # Replace  with your pubsub topic
     pubsub_topic = "projects/hadooptest-223316/topics/virtualStore"
     # Replace with your service account path
